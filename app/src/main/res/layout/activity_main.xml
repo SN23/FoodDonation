@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
+    <data>
+
+        <variable
+            name="user_choice_event"
+            type="com.nahal.sukhjinder.fooddonation.commands.userChoice" />
+    </data>
+
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -15,6 +22,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="125dp"
+            android:onClick="@(v)->user_choice_event.onUserChoiceClick()"
             android:text="@string/donate"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +34,7 @@
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="50dp"
-            android:text="@string/donate"
+            android:text="@string/pickup"
             app:layout_constraintEnd_toEndOf="@+id/donateButton"
             app:layout_constraintStart_toStartOf="@+id/donateButton"
             app:layout_constraintTop_toBottomOf="@+id/donateButton" />
