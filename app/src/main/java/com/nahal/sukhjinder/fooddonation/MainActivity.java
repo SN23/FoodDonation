@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
+
         mainBinding.donateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
