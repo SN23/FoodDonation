@@ -13,7 +13,7 @@ android {
     }
 
     dataBinding {
-        enabled true
+        enabled = true
     }
 
     buildTypes {

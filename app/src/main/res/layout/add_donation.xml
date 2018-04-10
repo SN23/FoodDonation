@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/foodDescriptionET"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/foodDesc"
+            android:inputType="textAutoCorrect|textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/donationDateET"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/donationDate"
+            android:inputType="date"
+            app:layout_constraintStart_toStartOf="@+id/foodDescriptionET"
+            app:layout_constraintTop_toBottomOf="@+id/foodDescriptionET" />
+
+        <EditText
+            android:id="@+id/donationTimeET"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/donationTime"
+            android:inputType="time"
+            app:layout_constraintStart_toStartOf="@+id/donationDateET"
+            app:layout_constraintTop_toBottomOf="@+id/donationDateET" />
+
+        <ImageButton
+            android:id="@+id/donationIMGButton"
+            android:layout_width="360dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/imgButtonContentDesc"
+            app:layout_constraintStart_toStartOf="@+id/donationTimeET"
+            app:layout_constraintTop_toBottomOf="@+id/donationTimeET"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <ImageView
+            android:id="@+id/donationImage"
+            android:layout_width="360dp"
+            android:layout_height="191dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/donationImageContentDesc"
+            app:layout_constraintStart_toStartOf="@+id/donationIMGButton"
+            app:layout_constraintTop_toBottomOf="@+id/donationIMGButton"
+            app:srcCompat="@android:drawable/picture_frame" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/submit"
+            app:layout_constraintEnd_toEndOf="@+id/donationImage"
+            app:layout_constraintStart_toStartOf="@+id/donationImage"
+            app:layout_constraintTop_toBottomOf="@+id/donationImage" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
