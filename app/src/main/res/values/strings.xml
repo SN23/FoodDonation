@@ -3,4 +3,13 @@
 
     <string name="donate">Donate</string>
     <string name="pickup">Pickup</string>
+
+    <!--add_donation-->
+    <string name="foodDesc">Food Description</string>
+    <string name="donationDate">Donation Date</string>
+    <string name="donationTime">Donation Time</string>
+    <string name="submit">Submit</string>
+    <string name="imgButtonContentDesc">Take a picture of the donation</string>
+    <string name="donationImageContentDesc">Image of donation</string>
+
 </resources>
