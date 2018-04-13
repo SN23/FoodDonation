@@ -12,14 +12,13 @@ import com.nahal.sukhjinder.fooddonation.presenter.MainPresenter;
 
 public class MainActivity extends AppCompatActivity implements MainActivityContract.MVPView {
 
-    private ActivityMainBinding mainBinding;
     private MainPresenter mainPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        ActivityMainBinding mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         mainPresenter = new MainPresenter(this);
         mainBinding.setPresenter(mainPresenter);
     }

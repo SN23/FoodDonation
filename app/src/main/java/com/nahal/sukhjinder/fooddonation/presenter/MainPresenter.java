@@ -1,7 +1,8 @@
 package com.nahal.sukhjinder.fooddonation.presenter;
 
-import com.nahal.sukhjinder.fooddonation.contract.MainActivityContract;
 import android.view.View;
+
+import com.nahal.sukhjinder.fooddonation.contract.MainActivityContract;
 
 public class MainPresenter implements MainActivityContract.Presenter {
 

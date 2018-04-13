@@ -4,13 +4,17 @@ import android.view.View;
 
 public interface MainActivityContract {
 
-    interface MVPView{
+    interface MVPView {
+
         void showDonateScreen();
+
         void showPickupScreen();
     }
 
-    interface Presenter{
+    interface Presenter {
+
         void donateButtonClick(View view);
+
         void pickupButtonClick(View view);
     }
 }
