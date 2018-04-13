@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Toast;
 
 import com.nahal.sukhjinder.fooddonation.R;
 import com.nahal.sukhjinder.fooddonation.contract.DonateActivityContract;
@@ -19,14 +17,12 @@ import com.nahal.sukhjinder.fooddonation.presenter.DonatePresenter;
 
 public class DonateActivity extends AppCompatActivity implements DonateActivityContract.MVPView {
 
-    private DonatePresenter donatePresenter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         DonateBinding donateBinding = DataBindingUtil.setContentView(this, R.layout.donate);
-        donatePresenter = new DonatePresenter(this);
+        DonatePresenter donatePresenter = new DonatePresenter(this);
         donateBinding.setPresenter(donatePresenter);
 
         getSupportActionBar().setTitle("Donate");
