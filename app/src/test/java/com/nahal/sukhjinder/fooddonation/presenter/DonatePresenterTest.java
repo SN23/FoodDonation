@@ -21,7 +21,7 @@ public class DonatePresenterTest {
     private DonatePresenter mPresenter;
 
     @Before
-    public void setUp() {
+    public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
         mPresenter = new DonatePresenter(mView);
     }
