@@ -1,12 +1,18 @@
 package com.nahal.sukhjinder.fooddonation.contract;
 
+import android.view.View;
+
 public interface DonateActivityContract {
 
-    interface View{
+    interface MVPView {
+
+        void showAddDonationScreen();
 
     }
 
-    interface Presenter{
+    interface Presenter {
+
+        void addDonationButtonClick(View view);
 
     }
 }
